@@ -1,0 +1,8 @@
+from kivy.app import App
+from kivy.uix.label import Label
+
+class JDMLabel(Label):
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.root = App.get_running_app().root
