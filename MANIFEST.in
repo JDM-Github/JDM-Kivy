@@ -1,0 +1,2 @@
+include src/jdm_kivy/*.json
+include src/jdm_kivy/*.ttf

@@ -1,3 +1,5 @@
+LICENSE
+MANIFEST.in
 README.md
 pyproject.toml
 setup.cfg
@@ -5,9 +7,11 @@ src/JDM_kivy.egg-info/PKG-INFO
 src/JDM_kivy.egg-info/SOURCES.txt
 src/JDM_kivy.egg-info/dependency_links.txt
 src/JDM_kivy.egg-info/top_level.txt
+src/jdm_kivy/Consolas.ttf
 src/jdm_kivy/Jconfig.py
 src/jdm_kivy/Jlabel.py
 src/jdm_kivy/Jscreen.py
 src/jdm_kivy/Jwidget.py
 src/jdm_kivy/Jwindow.py
 src/jdm_kivy/__init__.py
+src/jdm_kivy/config.json

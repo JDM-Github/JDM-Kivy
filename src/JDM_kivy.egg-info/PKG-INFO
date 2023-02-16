@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: JDM-kivy
-Version: 0.0.1
+Version: 0.0.3
 Summary: JDM-Kivy
 Home-page: https://github.com/JDM-Github/JDM-Kivy
 Author: JDM
@@ -11,3 +11,8 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JDM Kivy
+
+## This is my own kivy library, just like a snippet.
