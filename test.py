@@ -1,7 +1,11 @@
-from jdm_kivy import *
+# from jdm_kivy import *
+from src.jdm_kivy import *
 
 class MainScreen(JDMScreen): ...
-class MainWidget(JDMWidget): ...
+class MainWidget(JDMWidget):
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
 if __name__ == "__main__":
-    JDMApp(size=(500, 500)).run("main", MainScreen(), MainWidget())
+    JDMApp(size=(700, 700)).run("main", MainScreen(), MainWidget())

@@ -1,2 +1,2 @@
 include src/jdm_kivy/*.json
-include src/jdm_kivy/*.ttf
+include src/jdm_kivy/assets/font/consolas/*.ttf
