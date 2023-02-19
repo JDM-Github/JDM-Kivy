@@ -7,6 +7,7 @@ with open(f"{os.path.split(__file__)[0]}/config.json") as f:
         os.environ["KIVY_NO_CONSOLELOG"] = "1"
         os.system('cls')
 
+from kivy import platform
 from math import floor, ceil
 from .Jwindow import JDMApp, Window, platform, Clock, JDMRootManager, BooleanProperty, ReferenceListProperty
 from kivy.properties import ObjectProperty, StringProperty, NumericProperty, ListProperty

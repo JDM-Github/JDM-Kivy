@@ -1,5 +1,4 @@
-# from jdm_kivy import *
-from src.jdm_kivy import *
+from jdm_kivy import *
 
 class MainScreen(JDMScreen): ...
 class MainWidget(JDMWidget):
