@@ -40,8 +40,7 @@ class JDMRootManager(ScreenManager):
         self.elapseTime = None
         self.current_screen : JDMScreen
         self.__private_variable()
-        with open(f"{os.path.split(__file__)[0]}/config.json") as f:
-           self.__config = json.load(f)
+        with open(f"{os.path.split(__file__)[0]}/config.json") as f: self.__config = json.load(f)
         if self.__config.get("root_clock"): self._main_Clock = Clock.schedule_interval(self.update, 1/60)
         Window.bind(on_keyboard=self.hook_keyboard)
 

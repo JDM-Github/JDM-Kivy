@@ -1,0 +1,7 @@
+[build-system]
+requires = [
+    "kivy>=1.9.1",
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
