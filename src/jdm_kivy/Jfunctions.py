@@ -1,7 +1,10 @@
+import os
 import math
+import json
 from PIL import Image
 from .Jwidget import JDMWidget
 from .Jlabel import JDMLabel
+from .Jlogger import JDMLogger
 from kivy.utils import get_color_from_hex as GetColor
 from kivy.graphics import Rectangle, Color
 
@@ -10,6 +13,16 @@ def JDM_png_to_pdf(text: str, name: str):
     im_ = im.convert('RGB')
     im_.save(f"{name}.pdf", save_all=True)
     im.close()
+
+def JDM_getColor(string: str) -> str:
+    with open(os.path.split(__file__)[0]+"/all_color.json", 'r') as f:
+        main : dict = json.load(f)
+        color : str = main.get(string.title())
+    if not color:
+        stri = '\n --> '.join(list(main.keys()))
+        JDMLogger.warning(f"Color name {string.title()} is not found.\nAll color available:\n --> {stri}")
+        return "#ffffff"
+    return color
 
 def JDM_png_to_pdf_list(text_list: list[str], name: str):
     im = Image.open(text)

@@ -18,4 +18,5 @@ from .Jwidget import JDMWidget
 from .Jscreen import JDMScreen
 from .Jconfig import JDMConfig
 from .Jlabel import JDMLabel
-from .Jfunctions import JDM_png_to_pdf, JDM_png_to_pdf_list, JDM_addTitle, MathMMW
+from .Jimage import JDMImage
+from .Jfunctions import JDM_png_to_pdf, JDM_png_to_pdf_list, JDM_addTitle, MathMMW, JDM_getColor

@@ -5,12 +5,14 @@ pyproject.toml
 setup.cfg
 src/jdm_kivy/Jconfig.py
 src/jdm_kivy/Jfunctions.py
+src/jdm_kivy/Jimage.py
 src/jdm_kivy/Jlabel.py
 src/jdm_kivy/Jlogger.py
 src/jdm_kivy/Jscreen.py
 src/jdm_kivy/Jwidget.py
 src/jdm_kivy/Jwindow.py
 src/jdm_kivy/__init__.py
+src/jdm_kivy/all_color.json
 src/jdm_kivy/config.json
 src/jdm_kivy.egg-info/PKG-INFO
 src/jdm_kivy.egg-info/SOURCES.txt

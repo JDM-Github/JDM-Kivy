@@ -1,4 +1,4 @@
-from jdm_kivy import *
+from src.jdm_kivy import *
 
 if __name__ == "__main__":
     JDMApp().run()

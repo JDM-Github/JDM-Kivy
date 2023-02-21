@@ -110,13 +110,14 @@ class JDMApp(App):
 
     def __init__(self, title: str = None, size: list = (500, 500), manager: JDMRootManager=None, **kwargs):
         super().__init__(**kwargs)
-        self.root: JDMRootManager = manager if manager else JDMRootManager()
-        self.title = title if title else __class__.__name__.removesuffix('App')
-        self._main_title = self.title
         if not platform == 'android':
             Window.size = size
             Window.left = 1
             Window.top = 30
+        self.root: JDMRootManager = manager if manager else JDMRootManager()
+        self.title = title if title else __class__.__name__.removesuffix('App')
+        JDMLogger.log_start_app(f"{self.title} is starting...")
+        self._main_title = self.title
 
     def on_start(self):
         Window.bind(on_key_down=self.root.keyboard_down)
